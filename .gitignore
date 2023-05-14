@@ -1,0 +1,16 @@
+# Ignore Python cache files
+__pycache__/
+
+# Ignore logs folder
+logs/*.txt
+logs/*.csv
+pca/
+# Ignore video and image files
+*.mov
+*.jpg
+*.png
+*.mp4
+*.rar
+
+#Ignore various
+.vscode
