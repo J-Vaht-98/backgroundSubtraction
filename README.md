@@ -13,14 +13,16 @@ This function takes the following arguments:
 NB! The mask and video must be in sync i.e frame 23 of the video must correspond to frame 23 of the ground truth mask for the code to work properly. 
 
 The function maps the subtractor_name to the map below and uses the model defined for the key
-`subtractors = {
-            "GMM":cv2.createBackgroundSubtractorMOG2(detectShadows=False),
-            "KNN":cv2.createBackgroundSubtractorKNN(detectShadows=False),
-            "CNT":cv2.bgsegm.createBackgroundSubtractorCNT(),
-            "GMG":cv2.bgsegm.createBackgroundSubtractorGMG(),
-            "GSOC":cv2.bgsegm.createBackgroundSubtractorGSOC(),
-            "LSBP":cv2.bgsegm.createBackgroundSubtractorLSBP()
-        }`
+ ```
+ subtractors = {
+             "GMM":cv2.createBackgroundSubtractorMOG2(detectShadows=False),
+             "KNN":cv2.createBackgroundSubtractorKNN(detectShadows=False),
+             "CNT":cv2.bgsegm.createBackgroundSubtractorCNT(),
+             "GMG":cv2.bgsegm.createBackgroundSubtractorGMG(),
+             "GSOC":cv2.bgsegm.createBackgroundSubtractorGSOC(),
+             "LSBP":cv2.bgsegm.createBackgroundSubtractorLSBP()
+        }
+ ```
 
 "filters.py" - the "apply_filters" function is used to use erosion, dilation etc on a generated mask
 "metrics.py" - contains function to calculate IoU
