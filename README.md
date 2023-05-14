@@ -24,8 +24,8 @@ The function maps the subtractor_name to the map below and uses the model define
         }
  ```
 
-"filters.py" - the "apply_filters" function is used to use erosion, dilation etc on a generated mask
-"metrics.py" - contains function to calculate IoU
+* "filters.py" - the "apply_filters" function is used to use erosion, dilation etc on a generated mask
+* "metrics.py" - contains function to calculate IoU
 
 
 In this project 2 datasets were analyzed, DeepFish(https://alzayats.github.io/DeepFish/) and Luderick (https://github.com/globalwetlands/luderick-seagrass)
